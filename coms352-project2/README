@@ -1,0 +1,48 @@
+This directory contain's Cody Lakin's implementation of Iowa State University's
+Fall 2018 COMS352 Project 2. The project includes a client program and a server
+program. The server runs first, opens a TCP socket on the specified port, and
+allows clients to connect. When the client program runs, it will connect to the
+server at the specified ip address and port. Once connected, the client can type
+and enter commands such as those that would be used in a shell. The server will
+execute the commands on the remote shell and return the stdout/stderr to the
+client. Zombie processes are reaped. History can be displayed. Jobs can be displayed. Multiple commands can be entered with ; separating them. Messages between the server and client are encrypted.
+
+USING THE PROJECT:
+0) Navigate to the directory in a shell.
+1) Make sure the current directory contains client.c, Makefile, and server.c.
+2) Enter 'make clean'.
+3) Enter 'make'.
+4) Enter './server [options]'
+5) In another shell (alternatively, run server in background), repeat steps 0
+   and 1, then enter './client [options]'.
+6) Read the message from the client then enter commands.
+7) Repeat steps 5 & 6 for multiple clients, if desired
+8) Type 'quit' to exit a client.
+
+RUNNING CLIENT:
+-There are two options for the client executable: '-p <port #>' and
+'-a <ip address #>'
+
+RUNNING SERVER:
+-There is one option for the server executable: '-p <port #>'
+
+NOTES:
+-There is a finite number of clients because initializing the socket on the
+ server requests a limit. The number could be changed.
+-It was not specified not to, so I included some helpful directions/updates that
+ are printed by the server and client. They just let a user know what is
+ happening.
+-Port used is 8080 by default
+-IP address used is 127.0.0.1 / localhost by default.
+-Command length and output lengths are both limited because they require a
+ limit. The limit of output is 4096 characters. The limit of commands is 1024
+ characters.
+
+
+NEW NOTES FOR PROJECT 2:
+-I lost points for stderr not showing on P1. I used dup2 to send stderr
+just like I did with stdout. I see stderr on my client. This should not be a
+problem, so there is nothing I can fix.
+-As far as zombie processes go, the instructions were vague, but my program should not create any.
+-It was unclear which process jobs was supposed to return children for, the main instance or the children created to handle each client. I did it at the client handler level. It would be easy to change.
+-Also, the history commands will be recorded in the history and displayed in the same command in which they are used. This is how 'history' functioned on Pyrite, and so that is how I implemented it. The most recent entry will always be history. 

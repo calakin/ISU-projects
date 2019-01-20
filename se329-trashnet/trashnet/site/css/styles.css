@@ -1,0 +1,295 @@
+body{
+	padding: 0;
+	margin: 0 auto;
+}
+
+body::-webkit-scollbar{
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #454545;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FF7A14;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper{
+	max-width: 1020px;
+	margin: 0 auto;
+	/*background: #F3EEEE;*/
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/********************************************************Nav and Header Styles*******************************************************/
+.nav-header{
+	width: 100%;
+	height: 200px;
+	background-image:url("../img/green.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	line-height: 300px;
+	text-shadow: 3px 3px 5px grey;
+	color: #fff;
+}
+
+.nav-bar {
+	width: 100%;
+	height: 60px;
+	background: #FF7A14;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	/*box-shadow: 0px 3px 3px grey;*/
+}
+
+.nav-bar ul{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 60px;
+}
+
+.nav-bar li{
+	display: inline;
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.nav-bar a{
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+    width: 100%;
+}
+
+.nav-bar li:hover, .nav-bar li:visited{
+    height: 57px;
+	border-bottom: solid;
+	border-width: 3px;
+	border-color: #454545;
+}
+
+.main-title, .contact-title{
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+	color: #454545;
+}
+/*****************************************************End of Nav and Header Styles**************************************************/
+
+/********************************************************************Form styling******************************************************/
+
+.contact-section{
+	width: 100%;
+	height: 400px;
+	background-image: url("../img/img1.jpg");
+    
+}
+
+.wrapper form{
+	margin: 0 auto;
+	width: 100%;
+	padding: 50px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.wrapper div + div{
+	margin-top: 1em;
+}
+
+label{
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	
+}
+
+input, textarea{
+	font: 1.2em 'Montserrat', sans-serif;
+	width: 500px;
+	background: transparent;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #fff;
+	display: block;
+	margin: 0 auto;
+    height: 30px;
+    color: #fff;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+textarea{
+	vertical-align: top;
+	height: 5em;
+}
+
+.sub{
+    width: 500px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font: 1em 'Montserrat', sans-serif;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/*******************************************************End of form****************************************************************/
+
+/*******************************************************Footer style****************************************************************/
+
+footer{
+    width: 100%;
+    height: 75px;
+    background: #454545;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer ul{
+    margin: 0 auto;
+    list-style: none;
+    font: 1em 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+footer ul li{
+    display: inline;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 50px;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+/***********************************************End of Footer************************************************************************/
+
+/**********************************************Basic style for the main body**********************************************************/
+
+.main-body{
+    width: 100%;
+    height: 1200px;
+    font: 1.5em 'Montserrat', sans-serif;
+    color: #454545;
+    line-height: 1.75;
+}
+
+/**********************************************END of Basic style for the main body****************************************************/
+
+/*************************************************People box style********************************************************************/
+.people{
+    width: 480px;
+    height: 200px;
+    background: #FAFAFA;
+    float: left;
+    margin: 10px;
+    border: 5px solid #FF7A14;
+    box-shadow: 0px 3px 3px grey;
+    
+}
+
+.people img{
+    height: 175px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.people div{
+    display: inline-block;
+    float: right;
+    height: 50px;
+    width: 250px;
+    height: 190px;
+    padding: 5px;
+    margin-right: 20px;
+    overflow: auto;
+    line-height: 1.50;
+}
+
+.people div h4{
+    height: 50px;
+    margin: 0;
+}
+
+.people div p{
+    margin: 0;
+    font-size: .8em;
+}
+/*************************************************END of People box style**************************************************************/
+
+/*TEMPAROLLY*/
+.main-body h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-body h2{
+    text-align: center;
+}
+/*End of TEMPAROLLY*/
+
+/*********************************************************Stats Page************************************************************/
+
+/******************Table Style*****************/
+.table-body{
+	padding-top: 20px;
+}
+
+.table-body table{
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table-body th{
+	background-color: #FF7A14;
+	color: #fff;
+}
+
+.table-body td, th{
+	text-align: left;
+	padding: 10px;
+	/*border: 1px solid #FF7A14;*/
+}
+
+.table-body tr:nth-child(even){
+	background-color: #FF7A14;
+	color: #fff;
+}
+/******************END OF Table Style*****************/
+
+
+
+

@@ -1,0 +1,109 @@
+
+body {
+	
+}
+
+body.home {
+	background-color: #62EDB8;
+}
+
+body.info {
+	background-color: #44E74D;
+}
+
+body.leaderboard {
+	background-color: #DEF33E;
+}
+
+body.store {
+	background-image: url(images/workshop.jpg);
+}
+
+body.profile {
+	background-image: url(images/blue_wave.jpg);
+}
+
+body.matchmaker {
+	background-color: #DEF33E;
+}
+
+div.store {
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+div.object {
+	position: absolute;
+	background-color: red;
+	width: 150px;
+	height: 100px;
+}
+
+h1.main, h2.main {
+	height: 45px;
+	width: 1200px;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: brown;
+	text-align: center;
+	
+}
+
+#navbar {
+	background-color: red;
+	height: 45px;
+	width: 1200px;
+	font-size: 25px;
+	font-weight: bold;
+	font: Georgia;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#navbar ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#navbar ul li {
+	display: inline;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	padding: 8px 8px 8px 8px;
+	color: white;
+	vertical-align: middle;
+}
+
+#navbar ul li a:hover {
+	color: black;
+	background-color: white;
+}
+
+iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#instruction {
+	background-color: #83B4F0;
+	height: 800px;
+	width: 1200px;
+	margin: 0 auto;
+}

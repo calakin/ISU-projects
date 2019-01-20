@@ -1,0 +1,14 @@
+9/5/2017: Started assignment late due to homework in other classes
+    	  Created DungeonGenerator.c containing the main method
+   	  Created dungeons.h defining structs Room and Dungeon
+    	  Created dungeons.c with the methods for creating rooms and dungeons
+    	  Added necessary methods from dungeons.c to main in DungeonGenerator
+    	  Created Dungeon_Config.h to hold all constants
+9/6/2017: Implemented generateRoom completely without compile errors
+	  Added getClosestRoom(), addCorridors(), and connectRooms()
+	  Fixed various compile issues
+	  Figured out how to properly link files, fixed makefile
+       	  Program compiles, correctly displays rooms, TODO: implement corridors
+	  Implemented addCorridors() and the functions used in it
+	  Resolved compiler errors and bugs
+	

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Map</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+
+            #fullness {
+                height: 30px;
+                width: 100%;
+            }
+
+            #owner {
+                height: 30px;
+                width: 100%;
+            }
+
+            #filter {
+                height: 30px;
+                width: 100%;
+                visibility: visible;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!--The header and navigation part of every page-->
+        <div class="nav-header clearfix">
+            <h1>TrashNet</h1>
+        </div>
+
+        <nav class="nav-bar clearfix">
+            <div class="wrapper">
+                <ul class="clearfix">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="stats.php">Stats</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Map</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--End of header and navigation-->
+
+        <!--Body-->
+        <div class="wrapper">
+
+            <h1 class="main-title">Map</h1>
+
+            <h4>Filter Results: </h4>
+
+            Owner Name:
+            <select id="owner">
+                <option value="All">All</option>
+            </select>
+
+            Full/Empty:
+            <select id="fullness">
+                <option value="2">Both</option>
+                <option value="1">Full</option>
+                <option value="0">Empty</option>
+            </select>
+            <br>
+            <br>
+
+            <button type="button" id="filter" onclick="initMap()">Filter</button>
+            <br>
+            <br>
+
+            <div id="map"></div>
+
+            <div class="main-body">
+
+            </div>
+
+        </div>
+        <!--End of Body-->
+
+        <!--Footer-->
+        <footer>
+            <div class="wrapper">
+                <ul>
+                    <li>Copyright &#169 2018 TrashNet Inc. All right reserved</li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Legal</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        
+        <!--End of Footer--> 
+
+	<script src="js/getOwnerList.js"></script>
+        
+        <script src="js/getMapLocations.js"></script>
+
+	<script>
+		getOwnerList();
+	</script>
+
+    </body>
+
+</html>

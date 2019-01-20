@@ -1,0 +1,8 @@
+1.	Look up how the solution displays the original dungeon map
+2.	Model displayAllDistances after that
+3.	Fully implement display all distances
+4.	In mapAllDistances, implement using findDistance. Iteratively for
+	tunneling and maybe recursively for not tunneling
+5.	Study up on djikstra's
+6.	Write out psuedocode for djikstra's
+7.	Use professor's djikstra's as a start in findDistance()

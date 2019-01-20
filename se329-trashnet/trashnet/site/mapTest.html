@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+
+    <script src="js/getMapLocations.js">
+    </script>
+  </head>
+
+  <body>
+    <h1>Map</h1>
+    <h4>Filter Results: </h4>
+
+    Full/Empty:
+    <select id="fullness">  
+      <option value="2">All</option>
+      <option value="1">Full</option>
+      <option value="0">Empty</option>
+    </select><br>
+
+    Owner Name: 
+    <input type="text" id="owner" list="ownername">
+    <datalist id="ownername">
+      <option value="All owners"></option>
+    </datalist><br>
+
+    <input type="button" id="filter" value="Filter"></button><br><br>
+
+    <div id="map"></div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOrf-sZxhUN6Te4D2SnbGq2eVNjbhTjKA&callback=initMap">
+    </script>
+
+    <script>initMap();
+    </script>
+
+  </body>
+
+</html>

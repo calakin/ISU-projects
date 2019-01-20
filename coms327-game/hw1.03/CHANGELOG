@@ -1,0 +1,33 @@
+9/21/2017:	Imported solution code from homework 1.02.
+		Created changelog and readme.
+		Created dungeon.c, utility.c, and pathfinding.c
+		Moved all but main from rlg327.c to dungeon.c
+		Renamed rlg327.c as main.c
+		Created my own Makefile, produces executable rlg327.exe
+		Created dungeon.h, utility.h, pathfinding.h
+		Transferred definitions and function declarations to dungeon.h
+		As of this point, the code functions as it should for hw 1.02
+		New files need filled for 1.03 functionality
+
+		Added spawnPC() to utility.c
+		Fully implemented spawnPC()
+		Added ter_player_character to terrains and rendering
+		Added spawnPC() to main.c, just before rendering
+		Declared findDistance() in pathfinding.h
+		Declared mapAllDistances() in pathfinding.h
+		Declared displayDistances() in pathfinding.h
+		Added stubs for those functions in pathfinding.c
+9/23/2017:	Fully implemented all functions except find_distance()
+		Added show_distance() to use all of the pathfinding functions
+		and give the desired assignment functionality.
+		Implemented show_distance()
+		Added pathfinding functionality to main.c
+		Fixed all compiler errors
+		Need to fix bug where immutable border has random chars 
+		Code was not setting values for outer border (fixed)
+		Currently, find_distances just sets all to 0, need to implement
+		using djikstra's.
+9/27/2017:	Implemented djikstra's using previous solution code as a 
+		starting point.
+		Fixed compile errors and a segmentation fault.
+	

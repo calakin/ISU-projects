@@ -1,0 +1,14 @@
+#ifndef DUNGEON_CONFIG_H
+#define DUNGEON_CONFIG_H
+
+#define DUNGEONHEIGHT 21
+#define DUNGEONWIDTH 80
+#define MAXROOMWIDTH 8
+#define NUMROOMS 5
+#define MINROOMWIDTH 3
+#define MINROOMHEIGHT 2
+#define MAXROOMWIDTH 8
+#define MAXROOMHEIGHT 4
+#define BORDERCHAR '='
+
+#endif
